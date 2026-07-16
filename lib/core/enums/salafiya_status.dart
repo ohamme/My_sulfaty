@@ -1,0 +1,4 @@
+enum SalafiyaStatus {
+  active,
+  completed,
+}

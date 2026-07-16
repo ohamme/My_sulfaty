@@ -1,0 +1,4 @@
+enum MemberStatus {
+  active,
+  inactive,
+}
