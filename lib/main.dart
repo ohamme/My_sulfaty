@@ -2,12 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import 'app.dart';
-
-import 'features/salafiya/providers/salafiya_provider.dart';
-import 'features/members/providers/member_provider.dart';
+import 'features/home/providers/home_provider.dart';
 
 
 void main() {
+
 
   runApp(
 
@@ -15,22 +14,23 @@ void main() {
 
       providers: [
 
-        ChangeNotifierProvider(
-          create: (_) => SalafiyaProvider(),
-        ),
-
 
         ChangeNotifierProvider(
-          create: (_) => MemberProvider(),
+
+          create: (_) => HomeProvider()
+            ..loadDashboard(),
+
         ),
+
 
       ],
 
 
-      child: const SulafatiApp(),
+      child: const MyApp(),
 
     ),
 
   );
+
 
 }
