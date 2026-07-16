@@ -25,3 +25,13 @@ All notable changes to this project will be documented in this file.
 ### 🛠 Changed
 - إعادة تنظيم الملفات.
 - تحسين DatabaseHelper.
+# Changelog
+
+## [0.2.0] - 2026-07-16
+
+### Added
+- Added SalafiyaModel using Freezed.
+- Added JSON serialization support.
+- Added Salafiya status enum.
+- Improved project dependencies.
+- Prepared architecture for creating new salafiya.
